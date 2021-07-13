@@ -7,6 +7,9 @@ const forecast = require('./utils/forecast')
 const app = express()
 const port = process.env.PORT || 3000
 
+console.log(process.env.TWILIO_ACCOUNT_SID)
+console.log(process.env.TWILIO_AUTH_TOKEN)
+
 // Define paths for express config
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
